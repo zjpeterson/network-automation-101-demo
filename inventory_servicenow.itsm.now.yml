@@ -1,0 +1,17 @@
+---
+plugin: servicenow.itsm.now
+table: cmdb_ci_netgear
+columns:
+  - name
+  - ip_address
+  - model_id
+  - sys_id
+named_groups:
+  eos:
+    model_id.display_name:
+      includes:
+        - Arista vEOS Router
+  nxos:
+    model_id.display_name:
+      includes:
+        - Cisco Nexus 9000v

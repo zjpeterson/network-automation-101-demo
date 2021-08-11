@@ -1,0 +1,8 @@
+---
+- name: Check configuration compliance
+  hosts: eos,nxos
+  gather_facts: no
+
+  tasks:
+    - ansible.builtin.include_role:
+        name: network_config

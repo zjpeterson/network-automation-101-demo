@@ -1,0 +1,3 @@
+---
+- name: Include OS-appropriate tasks
+  ansible.builtin.include_tasks: "{{ ansible_network_os }}.yml"

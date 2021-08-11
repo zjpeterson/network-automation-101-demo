@@ -1,0 +1,6 @@
+---
+- name: VLAN resource config (EOS)
+  arista.eos.eos_vlans:
+    config: "{{ required_vlans }}"
+    state: merged
+  notify: save eos config

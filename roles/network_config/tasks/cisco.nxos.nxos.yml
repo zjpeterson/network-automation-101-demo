@@ -1,0 +1,6 @@
+---
+- name: VLAN resource config (NX-OS)
+  cisco.nxos.nxos_vlans:
+    config: "{{ required_vlans }}"
+    state: merged
+  notify: save nx-os config

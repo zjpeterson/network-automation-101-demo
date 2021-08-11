@@ -1,0 +1,10 @@
+---
+- name: save nx-os config
+  cisco.nxos.nxos_config:
+    save_when: always
+  when: not ansible_check_mode
+
+- name: save eos config
+  arista.eos.eos_config:
+    save_when: always
+  when: not ansible_check_mode
