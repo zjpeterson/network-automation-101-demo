@@ -1,5 +1,5 @@
 ---
-plugin: servicenow.servicenow.now
+plugin: servicenow_develop.servicenow.now
 table: cmdb_ci_netgear
 fields:
   - name
