@@ -1,0 +1,12 @@
+---
+plugin: servicenow.servicenow.now
+table: cmdb_ci_netgear
+fields:
+  - name
+  - ip_address
+  - model_id
+  - sys_id
+groups:
+  eos: model_id.display_name is search('Arista vEOS Router')
+  nxos: model_id.display_name is search('Cisco Nexus 9000v')
+filter_results: ip_addressSTARTSWITH10.15
