@@ -1,5 +1,4 @@
 ---
 collections:
   - ansible.network
-  - name: servicenow.servicenow
-    version: 1.0.7-dev
+  - servicenow_develop.servicenow
